@@ -1,0 +1,54 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Titulo</title>
+  </head>
+  <body>
+      <h1>Esta pagina describe</h1>
+      <h2>Los selectores de JQuery</h2>
+      <article>
+          <header>
+              <h1>Selectores</h1>
+          </header>
+          <h2>id #</h2>
+          <p class="textoazul">
+              El selector de Id es el signo de #
+              por ejemplo para seleccionar <span id="spanId">Este span</span>
+              usamos $("#spanId"); y para subrayarlo usariamos $("#spanId").ccs("text-decoration","underline");
+          </p>
+
+          <h2>selector de html tag</h2>
+          <p>
+              Para seleccionar todos (un array de elementos html) los elementos de un tipo
+              simplemente ponemos entre comillas el nombre del tag deseado
+              por ejemplo: para ponerle borde a todos los parrafos usariamos
+              $("p").css("border","1px solid black");
+          </p>
+
+          <h2>selector de propiedad class usando signo de punto </h2>
+          <p>
+              Para seleccionar todos los elementos html que usan una clase se usa 
+              el punto seguido de el nombre de la clase por ejemplo
+              $(".textoazul").css("color","blue"); pondra letras en color
+              azul a todos los tags de html que tengan la propiedad class="textoazul"
+              <span class="textoazul">tiene clase textoazul</span>
+              <span class="textorojo">tiene clase textorojo</span>
+          </p>
+          
+          <h2>selector de cualquier propiedad igual a un valor dado </h2>
+          <p>
+              Para seleccionar todos los elementos cuya propiedad sea igual a un valor dado
+              por ejemplo, si quisieramos seleccionar todos los elementos cuya propiedad
+              name sea igual a myname, usariamos los [] de la siguiente manera
+              $("[name='myname']").css("color","red");
+             <input type="text" name="myname" value="input name='myname'" /> 
+          </p>
+      </article>
+
+
+    <a href="@Url.Action("Index","Home")">Regresar</a>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Jonas/jquery-2.1.1.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Jonas/SelectoresJQuery.js")"></script>
+
+  </body>
+</html>
