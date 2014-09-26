@@ -1,0 +1,17 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Titulo</title>
+  </head>
+  <body>
+    <div id="content"></div>
+
+      <input type="hidden" id="url" value="@Url.Action("SaludoHtml","Ajax")" />
+
+      <input type="button" id ="saludo" value="Obtener Saludo" />
+
+    <a href="@Url.Action("Index","Home")">Regresar</a>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Jonas/jquery-2.1.1.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Jonas/GetExample.js")"></script>
+  </body>
+</html>

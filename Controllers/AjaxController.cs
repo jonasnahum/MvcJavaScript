@@ -45,5 +45,9 @@ namespace MvcJavaScript.Controllers
         {
             return View();
         }
+        public ActionResult ValidationView() 
+        {
+            return View();
+        }
     }
 }

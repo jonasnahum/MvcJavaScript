@@ -1,0 +1,38 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Validation</title>
+      <style>
+	        form {
+		        width: 500px;
+	        }
+	        form label {
+		        width: 250px;
+	        }
+	        form label.error, form input.submit {
+		        margin-left: 50px;
+                color:red;
+	        }
+	</style>
+  </head>
+  <body>
+    <form method="post" action="">
+        <fieldset>
+            <legend>Hola</legend>
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" data-rule-required="true" />
+            </p>
+            <p>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" />
+            </p>
+            <input type="submit" class="submit" value="Guardar" />
+        </fieldset>
+    </form>
+       <a href="@Url.Action("Index","Home")">Regresar</a>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Jonas/jquery-2.1.1.min.js")"></script>
+      <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Jonas/Validation.js")"></script>
+  </body>
+</html>

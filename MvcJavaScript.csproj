@@ -120,6 +120,7 @@
     <Content Include="Scripts\Jonas\EventosJQuery.js" />
     <Content Include="Scripts\Jonas\GetExample.js" />
     <Content Include="Scripts\Jonas\GetExampleParams.js" />
+    <Content Include="Scripts\Jonas\Validation.js" />
     <Content Include="Scripts\Jonas\JSonExample.js" />
     <Content Include="Scripts\Jonas\SelectoresJQuery.js" />
     <Content Include="Scripts\Jonas\Jonas.js" />
@@ -170,6 +171,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Ajax\JSonExample.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Ajax\ValidationView.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\ejercicios.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
